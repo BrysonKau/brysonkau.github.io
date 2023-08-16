@@ -78,7 +78,7 @@ body {
   
   /* Hover effect for buttons */
   .button {
-    background-color: #0ff0ff;
+    background-color: #0fff0f;
     color: #000;
     padding: 8px 15px;
     border: none;
@@ -88,7 +88,7 @@ body {
   }
   
   .button:hover {
-    background-color: #00ff00;
+    background-color: #ffffff;
   }
 
   .center-container {
