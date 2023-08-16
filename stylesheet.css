@@ -94,3 +94,7 @@ body {
   .center-container {
     text-align: center;
   }
+
+.img-logo {
+    width: 180px;
+}
