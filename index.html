@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Breaker</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="codebreaker.css">
     <style>
         .table-container {
             display: flex;
             justify-content: space-between;
-            margin: 20px auto;
+            margin: 20px;
         }
 
         table {
@@ -27,17 +27,27 @@
             background-color: #000000;
             color: #00ff00;
         }
+
+        .black-text {
+            color: black;
+        }
     </style>
 </head>
 <body>
     <div class="center-container">
         <img class="img-logo" src="img/logo.png" alt="pfsm logo">
         <h1>Code Breaker</h1>
-        <h2>Directions: Enter the code with dashes in between each number</h2>
+        <h2>Directions: <h2>
+        <h2> Left Box: Enter a code with dashes in between each number to recieve the message</h3>
+        <h2> Right Box: Enter a message to recieve a code </h2> 
         <textarea id="inputCode" placeholder="Enter your code here. Ex: 3-15-4-5..."></textarea>
+        <textarea id="inputString" placeholder="Enter you message here. Ex: code"></textarea>
+        <h2></h2>
         <button class=button glitch onclick="generateMessage()">Generate Message</button>
+        <button class = button glitch onclick = "generateCode()">Generate Code</button>
         <p id="outputMessage"></p>
     </div>
+
     
     <div class="table-container">
         <table>
@@ -167,7 +177,6 @@
             </tbody>
         </table>
     </div>
-
     <script src="codebreaker.js"></script>
 </body>
 </html>
